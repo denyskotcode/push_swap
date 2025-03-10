@@ -6,27 +6,25 @@
 /*   By: dkot <dkot@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/09 15:30:18 by dkot              #+#    #+#             */
-/*   Updated: 2025/03/09 17:53:53 by dkot             ###   ########.fr       */
+/*   Updated: 2025/03/10 12:51:43 by dkot             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-
-void ft_free_split(char **split)
+void	ft_free_split(char **split)
 {
-    int i;
+	int	i;
 
-    if (!split)
-        return;
-    
-    i = 0;
-    while (split[i])
-    {
-        free(split[i]);
-        i++;
-    }
-    free(split);
+	if (!split)
+		return ;
+	i = 0;
+	while (split[i])
+	{
+		free(split[i]);
+		i++;
+	}
+	free(split);
 }
 
 int	check_number(const char *str, int i, int sign)
@@ -99,17 +97,18 @@ int	process_arg(char *arg, int *count)
 	return (0);
 }
 
-int count_numbers(char **argv)
+int	count_numbers(char **argv)
 {
-    int count = 0;
-    int i = 1;
+	int	count;
+	int	i;
 
-    while (argv[i])
-    {
-
-        if (process_arg(argv[i], &count) == -1)
-            return (-1);
-        i++;
-    }
-    return count;
+	count = 0;
+	i = 1;
+	while (argv[i])
+	{
+		if (process_arg(argv[i], &count) == -1)
+			return (-1);
+		i++;
+	}
+	return (count);
 }
