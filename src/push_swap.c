@@ -6,29 +6,15 @@
 /*   By: dkot <dkot@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/04 14:42:52 by dkot              #+#    #+#             */
-/*   Updated: 2025/03/10 14:15:01 by dkot             ###   ########.fr       */
+/*   Updated: 2025/03/10 14:59:13 by dkot             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-void ft_lstclear1(t_list **lst, void (*del)(void *))
+int main(int argc, char *argv[])
 {
-    t_list *current = *lst;
-    t_list *next;
-    while (current)
-    {
-        next = current->next;
-        del(current->content); // Frees the int*
-        free(current);         // Frees the t_list node
-        current = next;
-    }
-    *lst = NULL;
-}
-
-int	main(int argc, char *argv[])
-{
-	int	count;
+	int count;
 
 	if (argc < 2)
 	{
@@ -43,15 +29,18 @@ int	main(int argc, char *argv[])
 	}
 
 	t_list *a;
+	t_list *b;
 	t_list *test;
+
 	a = init_stack_a(argc, argv);
+	b = ft_lstnew(NULL);
 	test = a;
 	while (test != NULL)
 	{
 		ft_printf("%d number\n", *(int *)(test->content));
 		test = test->next;
 	}
-    ft_lstclear(&a, free);
+	ft_lstclear(&a, free);
 
 	return (0);
 }
