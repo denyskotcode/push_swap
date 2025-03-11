@@ -6,7 +6,7 @@
 /*   By: dkot <dkot@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/04 14:42:52 by dkot              #+#    #+#             */
-/*   Updated: 2025/03/11 15:45:04 by dkot             ###   ########.fr       */
+/*   Updated: 2025/03/11 17:17:42 by dkot             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,29 +30,30 @@ int main(int argc, char *argv[])
 
 	t_list *a;
 	t_list *b;
-	t_list *test_a;
-	t_list *test_b;
+	// t_list *test_a;
+	// t_list *test_b;
 
 
 	a = init_stack_a(argc, argv);
 	b = NULL;
-	rra(&a);
-
-	test_a = a;
-	test_b = b;
-	while (test_a != NULL)
-	{
-		ft_printf("%d a\n", *(int *)(test_a->content));
-		test_a = test_a->next;
-	}
-	while (test_b != NULL)
-	{
-		ft_printf("%d b\n", *(int *)(test_b->content));
-		test_b = test_b->next;
-	}
+	if (count == 2)
+		sort_two(&a);
+	else if (count == 3)
+		sort_three(&a);
+	
+	// test_a = a;
+	// test_b = b;
+	// while (test_a != NULL)
+	// {
+	// 	ft_printf("%d a\n", *(int *)(test_a->content));
+	// 	test_a = test_a->next;
+	// }
+	// while (test_b != NULL)
+	// {
+	// 	ft_printf("%d b\n", *(int *)(test_b->content));
+	// 	test_b = test_b->next;
+	// }
 	ft_lstclear(&a, free);
 	ft_lstclear(&b, free);
-
-
 	return (0);
 }

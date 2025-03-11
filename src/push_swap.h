@@ -6,7 +6,7 @@
 /*   By: dkot <dkot@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/04 14:53:19 by dkot              #+#    #+#             */
-/*   Updated: 2025/03/11 15:43:42 by dkot             ###   ########.fr       */
+/*   Updated: 2025/03/11 17:12:16 by dkot             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,4 +48,7 @@ void		rrx(t_list **x);
 void		rra(t_list **a);
 void		rrb(t_list **b);
 void		rrr(t_list **a, t_list **b);
+void        sort_two(t_list **a);
+void        sort_three(t_list **a);
+
 #endif

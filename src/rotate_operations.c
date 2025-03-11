@@ -6,7 +6,7 @@
 /*   By: dkot <dkot@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/11 14:01:44 by dkot              #+#    #+#             */
-/*   Updated: 2025/03/11 15:34:09 by dkot             ###   ########.fr       */
+/*   Updated: 2025/03/11 17:15:48 by dkot             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,6 @@ void	rx(t_list **x)
 	last = ft_lstlast(*x);
 	last->next = first;
 	first->next = NULL;
-	ft_printf("rx\n");
 }
 
 void	ra(t_list **a)
