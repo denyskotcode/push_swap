@@ -1,37 +1,47 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   push_operations.c                                  :+:      :+:    :+:   */
+/*   rotate_operations.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dkot <dkot@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/03/11 13:54:20 by dkot              #+#    #+#             */
-/*   Updated: 2025/03/11 15:35:20 by dkot             ###   ########.fr       */
+/*   Created: 2025/03/11 14:01:44 by dkot              #+#    #+#             */
+/*   Updated: 2025/03/11 15:34:09 by dkot             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-void px(t_list **a, t_list **b)
+void	rx(t_list **x)
 {
-    t_list *temp;
+	t_list	*first;
+	t_list	*last;
 
-    if (!*b)
-        return;
-    temp = *b;
-    *b = (*b)->next;
-    temp->next = *a;
-    *a = temp;
+	if (!*x || !(*x)->next)
+		return ;
+	first = *x;
+	*x = first->next;
+	last = ft_lstlast(*x);
+	last->next = first;
+	first->next = NULL;
+	ft_printf("rx\n");
 }
 
-void pa(t_list **a, t_list **b)
+void	ra(t_list **a)
 {
-	px(a,b);
-	ft_printf("pa\n");
+	rx(a);
+	ft_printf("ra\n");
 }
 
-void pb(t_list **a, t_list **b)
+void	rb(t_list **b)
 {
-	px(b,a);
-	ft_printf("pb\n");
+	rx(b);
+	ft_printf("rb\n");
+}
+
+void	rr(t_list **a, t_list **b)
+{
+	rx(a);
+	rx(b);
+	ft_printf("rr\n");
 }

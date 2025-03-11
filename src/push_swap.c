@@ -6,7 +6,7 @@
 /*   By: dkot <dkot@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/04 14:42:52 by dkot              #+#    #+#             */
-/*   Updated: 2025/03/11 14:00:07 by dkot             ###   ########.fr       */
+/*   Updated: 2025/03/11 15:45:04 by dkot             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,8 +36,7 @@ int main(int argc, char *argv[])
 
 	a = init_stack_a(argc, argv);
 	b = NULL;
-	pb(&a, &b);
-	pb(&a, &b);
+	rra(&a);
 
 	test_a = a;
 	test_b = b;
