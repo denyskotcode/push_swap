@@ -6,7 +6,7 @@
 /*   By: dkot <dkot@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/04 14:53:19 by dkot              #+#    #+#             */
-/*   Updated: 2025/03/11 17:12:16 by dkot             ###   ########.fr       */
+/*   Updated: 2025/03/12 18:26:00 by dkot             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,10 +16,15 @@
 # include "../libs/libft/libft.h"
 # include "../libs/libftprintf/ft_printf.h"
 
-typedef struct	s_stack
+typedef struct s_cost
 {
-	t_list	*top;
-}   t_stack;
+	int	value;
+	int	ra;
+	int	rb;
+	int	rra;
+	int	rrb;
+	int	total;
+}	t_cost;
 
 int			is_valid_number(const char *str);
 int			check_number(const char *str, int i, int sign);

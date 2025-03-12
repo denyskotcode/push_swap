@@ -1,0 +1,455 @@
+make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+# GNU Make 4.3
+# Built for x86_64-pc-linux-gnu
+# Copyright (C) 1988-2020 Free Software Foundation, Inc.
+# License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+# This is free software: you are free to change and redistribute it.
+# There is NO WARRANTY, to the extent permitted by law.
+ 
+
+# Make data base, printed on Wed Mar 12 15:46:09 2025
+
+# Variables
+
+# environment
+GDK_BACKEND = x11
+# environment
+LC_ALL = C
+# environment
+SSH_AGENT_LAUNCHER = gnome-keyring
+# makefile (from 'Makefile', line 10)
+OBJDIR = obj
+# makefile (from 'Makefile', line 6)
+PROJECT_NAME = push_swap
+# environment
+VSCODE_CRASH_REPORTER_PROCESS_TYPE = extensionHost
+# environment
+VSCODE_CWD = /home/dkot
+# environment
+LIBVIRT_DEFAULT_URI = qemu:///system
+# default
+MAKE_COMMAND := make
+# environment
+QT_ACCESSIBILITY = 1
+# makefile (from 'Makefile', line 13)
+FTPRINTF_DIR = libs/libftprintf
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# default
+.VARIABLES := 
+# environment
+PWD = /home/dkot/Desktop/Core/push_swap
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# environment
+LSCOLORS = Gxfxcxdxbxegedabagacad
+# environment
+XDG_DATA_DIRS = /usr/share/ubuntu:/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop
+# environment
+OLDPWD = /home/dkot
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# automatic
+%F = $(notdir $%)
+# environment
+VSCODE_CODE_CACHE_PATH = /home/dkot/.config/Code/CachedData/6609ac3d66f4eade5cf376d1cb76f13985724bcb
+# environment
+XDG_SESSION_PATH = /org/freedesktop/DisplayManager/Session0
+# makefile (from 'Makefile', line 22)
+LIBFT = $(LIBFTDIR)/libft.a
+# environment
+LANG = C
+# environment
+XAUTHORITY = /home/dkot/.Xauthority
+# default
+.LOADED := 
+# default
+.INCLUDE_DIRS = /usr/local/include /usr/include /usr/include
+# makefile
+MAKEFLAGS = pqrR
+# environment
+DBUS_STARTER_ADDRESS = unix:path=/run/user/102085/bus,guid=5c166b66eb006fecfa3303a267d18408
+# makefile
+CURDIR := /home/dkot/Desktop/Core/push_swap
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# environment
+MFLAGS = -pqrR
+# environment
+SSH_AUTH_SOCK = /run/user/102085/keyring/ssh
+# default
+.SHELLFLAGS := -c
+# environment
+XDG_CONFIG_DIRS = /etc/xdg/xdg-ubuntu:/etc/xdg
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# makefile (from 'Makefile', line 12)
+LIBFTDIR = libs/libft
+# environment
+XDG_SESSION_DESKTOP = ubuntu
+# makefile (from 'Makefile', line 1)
+MAKEFILE_LIST := Makefile
+# automatic
+@F = $(notdir $@)
+# environment
+ZSH = /home/dkot/.oh-my-zsh
+# environment
+VSCODE_PID = 443802
+# environment
+KRB5CCNAME = FILE:/tmp/krb5cc_102085_cgMDuG
+# environment
+XDG_SESSION_TYPE = x11
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# environment
+SESSION_MANAGER = local/c1r5s3.42prague.com:@/tmp/.ICE-unix/433501,unix/c1r5s3.42prague.com:/tmp/.ICE-unix/433501
+# automatic
+*F = $(notdir $*)
+# environment
+CHROME_DESKTOP = code.desktop
+# environment
+DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/102085/bus,guid=5c166b66eb006fecfa3303a267d18408
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# environment
+VSCODE_NLS_CONFIG = {"userLocale":"en-us","osLocale":"en-us","resolvedLanguage":"en","defaultMessagesFile":"/usr/share/code/resources/app/out/nls.messages.json","locale":"en-us","availableLanguages":{}}
+# default
+MAKE_HOST := x86_64-pc-linux-gnu
+# environment
+GNOME_DESKTOP_SESSION_ID = this-is-deprecated
+# makefile
+SHELL = /bin/sh
+# default
+MAKECMDGOALS := all
+# environment
+XMODIFIERS = @im=ibus
+# environment
+SHLVL = 0
+# environment
+MAKELEVEL := 0
+# default
+MAKE = $(MAKE_COMMAND)
+# environment
+PATH = /home/dkot/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+# default
+MAKEFILES := 
+# automatic
+^F = $(notdir $^)
+# makefile (from 'Makefile', line 16)
+PROJECT_SRC = push_swap.c parsing.c check_duplicates.c init_stack.c swap_operations.c push_operations.c rotate_operations.c reverse_rotate_operations.c small_sorting.c big_sorting.c
+# environment
+INVOCATION_ID = 0d47722c87934f3b8c9b1a6ab4e1939e
+# environment
+DOCKER_HOST = unix:///run/user/102085/docker.sock
+# automatic
+?F = $(notdir $?)
+# environment
+GTK_IM_MODULE = ibus
+# environment
+XDG_CURRENT_DESKTOP = Unity
+# makefile (from 'Makefile', line 23)
+FTPRINTF = $(FTPRINTF_DIR)/libftprintf.a
+# makefile (from 'Makefile', line 19)
+PROJECT_OBJ = $(PROJECT_SRC:%.c=$(OBJDIR)/%.o)
+# automatic
++F = $(notdir $+)
+# environment
+XDG_SEAT_PATH = /org/freedesktop/DisplayManager/Seat0
+# environment
+LESS = -R
+# environment
+DESKTOP_SESSION = ubuntu
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = ubuntu:GNOME
+# 'override' directive
+GNUMAKEFLAGS := 
+# environment
+LOGNAME = dkot
+# environment
+GIO_LAUNCHED_DESKTOP_FILE = /usr/share/applications/code.desktop
+# makefile
+.DEFAULT_GOAL := all
+# environment
+SYSTEMD_EXEC_PID = 433501
+# environment
+DISPLAY = :0
+# environment
+USER = dkot
+# environment
+GTK_MODULES = gail:atk-bridge
+# default
+MAKE_VERSION := 4.3
+# environment
+MANAGERPID = 432916
+# environment
+DBUS_STARTER_BUS_TYPE = session
+# environment
+DEBUGINFOD_URLS = https://debuginfod.ubuntu.com 
+# environment
+GIO_LAUNCHED_DESKTOP_FILE_PID = 443802
+# environment
+PAGER = less
+# environment
+_ = /usr/share/code/code
+# environment
+XDG_RUNTIME_DIR = /run/user/102085
+# makefile (from 'Makefile', line 3)
+CFLAGS = -Wall -Werror -Wextra -g
+# environment
+GPG_AGENT_INFO = /run/user/102085/gnupg/S.gpg-agent:0:1
+# environment
+JOURNAL_STREAM = 8:965064
+# environment
+XDG_SESSION_CLASS = user
+# environment
+HOME = /home/dkot
+# environment
+QT_IM_MODULE = ibus
+ 
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# environment
+VSCODE_IPC_HOOK = /run/user/102085/vscode-a407ef18-1.98-main.sock
+# makefile (from 'Makefile', line 9)
+SRCDIR = src
+# environment
+FT_HOOK_PATHNAME = login-user.d
+# default
+.RECIPEPREFIX := 
+# automatic
+<F = $(notdir $<)
+# default
+SUFFIXES := 
+# environment
+FT_HOOK_NAME = login-user
+# environment
+XDG_GREETER_DATA_DIR = /var/lib/lightdm-data/dkot
+# default
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell nocomment grouped-target extra-prereqs archives jobserver output-sync check-symlink load
+# makefile (from 'Makefile', line 2)
+CC = cc
+# environment
+XDG_MENU_PREFIX = gnome-
+# environment
+VSCODE_ESM_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+GDMSESSION = ubuntu
+# variable set hash-table stats:
+# Load=113/1024=11%, Rehash=0, Collisions=10/167=6%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# src (device 2048, inode 25301583): 13 files, no impossibilities so far.
+# . (device 2048, inode 17546426): 10 files, no impossibilities.
+
+# 23 files, no impossibilities in 2 directories.
+
+# Implicit Rules
+
+obj/%.o: src/%.c | obj
+#  recipe to execute (from 'Makefile', line 34):
+	$(CC) $(CFLAGS) -I$(LIBFTDIR) -I$(FTPRINTF_DIR) -c $< -o $@
+
+# 1 implicit rules, 0 (0.0%) terminal.
+# Files
+
+# Not a target:
+obj/big_sorting.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+obj/swap_operations.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  Last modified 2025-03-11 17:25:45.59194504
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+src/push_swap.c:
+#  Implicit rule search has been done.
+#  Last modified 2025-03-12 15:45:04.241521612
+#  File has been updated.
+#  Successfully updated.
+
+clean:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 49):
+	rm -rf $(OBJDIR)
+	$(MAKE) -C $(LIBFTDIR) clean
+	$(MAKE) -C $(FTPRINTF_DIR) clean
+
+re: fclean all
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+obj:
+#  Implicit rule search has not been done.
+#  Last modified 2025-03-12 15:40:27.715163446
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 38):
+	mkdir -p $(OBJDIR)
+
+# Not a target:
+obj/init_stack.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+libs/libft/libft.a:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 42):
+	$(MAKE) -C $(LIBFTDIR)
+
+# Not a target:
+obj/check_duplicates.o:
+ 
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+obj/push_operations.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+all: push_swap
+#  Phony target (prerequisite of .PHONY).
+#  Command line target.
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/7=0%
+
+fclean: clean
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 54):
+	rm -f $(PROJECT_NAME)
+	$(MAKE) -C $(LIBFTDIR) fclean
+	$(MAKE) -C $(FTPRINTF_DIR) fclean
+
+obj/push_swap.o: src/push_swap.c | obj
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'push_swap'
+#  Last modified 2025-03-12 15:40:27.506160886
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# automatic
+# @ := obj/push_swap.o
+# automatic
+# * := push_swap
+# automatic
+# < := src/push_swap.c
+# automatic
+# + := src/push_swap.c
+# automatic
+# % := 
+# automatic
+# ^ := src/push_swap.c
+# automatic
+# ? := src/push_swap.c
+# automatic
+# | := obj
+# variable set hash-table stats:
+# Load=8/32=25%, Rehash=0, Collisions=4/17=24%
+#  recipe to execute (from 'Makefile', line 34):
+	$(CC) $(CFLAGS) -I$(LIBFTDIR) -I$(FTPRINTF_DIR) -c $< -o $@
+
+push_swap: obj/push_swap.o obj/parsing.o obj/check_duplicates.o obj/init_stack.o obj/swap_operations.o obj/push_operations.o obj/rotate_operations.o obj/reverse_rotate_operations.o obj/small_sorting.o obj/big_sorting.o libs/libft/libft.a libs/libftprintf/libftprintf.a
+#  Implicit rule search has not been done.
+#  Last modified 2025-03-12 15:40:28.724175802
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/7=0%
+#  recipe to execute (from 'Makefile', line 29):
+	$(CC) $(CFLAGS) $(PROJECT_OBJ) -L$(LIBFTDIR) -lft -L$(FTPRINTF_DIR) -lftprintf -o $(PROJECT_NAME)
+
+# Not a target:
+obj/parsing.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+obj/small_sorting.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+libs/libftprintf/libftprintf.a:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 45):
+	$(MAKE) -C $(FTPRINTF_DIR)
+
+.PHONY: all clean fclean re
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+obj/rotate_operations.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+obj/reverse_rotate_operations.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# files hash-table stats:
+# Load=23/1024=2%, Rehash=0, Collisions=0/62=0%
+# VPATH Search Paths
+
+# No 'vpath' search paths.
+
+# No general ('VPATH' variable) search path.
+
+# strcache buffers: 1 (0) / strings = 45 / storage = 608 B / avg = 13 B
+# current buf: size = 8162 B / used = 608 B / count = 45 / avg = 13 B
+
+# strcache performance: lookups = 79 / hit rate = 43%
+# hash-table stats:
+# Load=45/8192=1%, Rehash=0, Collisions=0/79=0%
+# Finished Make data base on Wed Mar 12 15:46:09 2025
+
+ 
