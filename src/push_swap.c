@@ -6,7 +6,7 @@
 /*   By: dkot <dkot@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/04 14:42:52 by dkot              #+#    #+#             */
-/*   Updated: 2025/03/12 19:18:59 by dkot             ###   ########.fr       */
+/*   Updated: 2025/03/12 19:24:27 by dkot             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,12 @@
 
 int main(int argc, char *argv[])
 {
-	int count;
+	int		count;
+	t_list	*a;
+	t_list	*b;
 
 	if (argc < 2)
 	{
-		ft_printf("Error! No arguments found\n");
 		return (0);
 	}
 	count = count_numbers(argv);
@@ -27,23 +28,11 @@ int main(int argc, char *argv[])
 		ft_printf("Error: Invalid input.\n");
 		return (0);
 	}
-
-	t_list *a;
-	t_list *b;
-	t_list *test_a;
-	t_list *test_b;
-
-
 	a = init_stack_a(argc, argv);
 	b = NULL;
-	if (count == 2)
-		sort_two(&a);
-	else if (count == 3)
-		sort_three(&a);
-	else
-		{
-			sort_big(&a,&b);
-		}
+	push_swap(&a, &b, count);
+	t_list *test_a;
+	t_list *test_b;
 	test_a = a;
 	test_b = b;
 	while (test_a != NULL)
@@ -59,4 +48,14 @@ int main(int argc, char *argv[])
 	ft_lstclear(&a, free);
 	ft_lstclear(&b, free);
 	return (0);
+}
+
+void push_swap(t_list **a, t_list **b, int count)
+{
+	if (count == 2)
+		sort_two(a);
+	else if (count == 3)
+		sort_three(a);
+	else
+		sort_big(a,b);
 }

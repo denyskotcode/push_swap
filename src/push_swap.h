@@ -6,7 +6,7 @@
 /*   By: dkot <dkot@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/04 14:53:19 by dkot              #+#    #+#             */
-/*   Updated: 2025/03/12 19:17:40 by dkot             ###   ########.fr       */
+/*   Updated: 2025/03/12 19:22:47 by dkot             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,15 +16,6 @@
 # include "../libs/libft/libft.h"
 # include "../libs/libftprintf/ft_printf.h"
 
-typedef struct s_cost
-{
-	int	value;
-	int	ra;
-	int	rb;
-	int	rra;
-	int	rrb;
-	int	total;
-}	t_cost;
 
 int			is_valid_number(const char *str);
 int			check_number(const char *str, int i, int sign);
@@ -57,6 +48,7 @@ void        sort_two(t_list **a);
 void        sort_three(t_list **a);
 void	move_from_a_to_b(t_list	**a, t_list	**b);
 void sort_big(t_list **a, t_list **b);
+void push_swap(t_list **a, t_list **b, int count);
 
 
 #endif
