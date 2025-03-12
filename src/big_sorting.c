@@ -6,7 +6,7 @@
 /*   By: dkot <dkot@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/11 17:25:17 by dkot              #+#    #+#             */
-/*   Updated: 2025/03/12 19:17:23 by dkot             ###   ########.fr       */
+/*   Updated: 2025/03/12 20:05:12 by dkot             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,7 +45,11 @@ void sort_big(t_list **a, t_list **b)
 		sort_three(a);
 	else if (ft_lstsize(*a) == 2)
 		sort_two(a);
+	move_from_b_to_a(a, b);
+	move_to_top(a);
+
 }
+
 
 void	move_from_a_to_b(t_list	**a, t_list	**b)
 {
@@ -66,10 +70,24 @@ void	move_from_a_to_b(t_list	**a, t_list	**b)
 	}
 }
 
-// void	move_to_top(t_list **a)
-// {
-// 	while (!is_sorted(*a))
-// 	{
-// 		ra(a);
-// 	}
-// }
+int	move_from_b_to_a(t_list **a, t_list **b)
+{
+	t_move_cost	*cheapest;
+
+	while (*b)
+	{
+		cheapest = get_cheapest(*a, *b, ft_lstsize(*b));
+		execute_moves(cheapest, a, b);
+		free(cheapest);
+	}
+	move_to_top(b);
+	return (0);
+}
+
+void	move_to_top(t_list **a)
+{
+	while (!is_sorted(*a))
+	{
+		ra(a);
+	}
+}
