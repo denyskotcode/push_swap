@@ -6,7 +6,7 @@
 /*   By: dkot <dkot@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/04 14:53:19 by dkot              #+#    #+#             */
-/*   Updated: 2025/03/12 20:28:52 by dkot             ###   ########.fr       */
+/*   Updated: 2025/03/12 21:56:14 by dkot             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -79,5 +79,6 @@ void		sort_big(t_list **a, t_list **b);
 void		move_from_a_to_b(t_list **a, t_list **b);
 int			move_from_b_to_a(t_list **a, t_list **b);
 void		move_to_top(t_list **a);
+int			add_number_to_stack(char *num_str, t_list **stack_a);
 
 #endif
