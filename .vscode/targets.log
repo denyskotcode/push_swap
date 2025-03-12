@@ -5,9 +5,8 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
- 
 
-# Make data base, printed on Wed Mar 12 20:02:47 2025
+# Make data base, printed on Wed Mar 12 21:39:49 2025
 
 # Variables
 
@@ -70,13 +69,11 @@ XAUTHORITY = /home/dkot/.Xauthority
 # makefile
 MAKEFLAGS = pqrR
 # environment
-DBUS_STARTER_ADDRESS = unix:path=/run/user/102085/bus,guid=5c166b66eb006fecfa3303a267d18408
+DBUS_STARTER_ADDRESS = unix:path=/run/user/102085/bus,guid=5a1d83e4dd7dfa1dc81f406367d1eea4
 # makefile
 CURDIR := /home/dkot/Desktop/Core/push_swap
 # environment
 APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
-# environment
-VSCODE_L10N_BUNDLE_LOCATION = 
 # automatic
 *D = $(patsubst %/,%,$(dir $*))
 # environment
@@ -95,27 +92,27 @@ LIBFTDIR = libs/libft
 XDG_SESSION_DESKTOP = ubuntu
 # makefile (from 'Makefile', line 1)
 MAKEFILE_LIST := Makefile
- 
 # automatic
+ 
 @F = $(notdir $@)
 # environment
 ZSH = /home/dkot/.oh-my-zsh
 # environment
-VSCODE_PID = 443802
+VSCODE_PID = 471526
 # environment
-KRB5CCNAME = FILE:/tmp/krb5cc_102085_cgMDuG
+KRB5CCNAME = FILE:/tmp/krb5cc_102085_WNRLb8
 # environment
 XDG_SESSION_TYPE = x11
 # automatic
 ?D = $(patsubst %/,%,$(dir $?))
 # environment
-SESSION_MANAGER = local/c1r5s3.42prague.com:@/tmp/.ICE-unix/433501,unix/c1r5s3.42prague.com:/tmp/.ICE-unix/433501
+SESSION_MANAGER = local/c1r5s3.42prague.com:@/tmp/.ICE-unix/470606,unix/c1r5s3.42prague.com:/tmp/.ICE-unix/470606
 # automatic
 *F = $(notdir $*)
 # environment
 CHROME_DESKTOP = code.desktop
 # environment
-DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/102085/bus,guid=5c166b66eb006fecfa3303a267d18408
+DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/102085/bus,guid=5a1d83e4dd7dfa1dc81f406367d1eea4
 # automatic
 <D = $(patsubst %/,%,$(dir $<))
 # environment
@@ -143,9 +140,9 @@ MAKEFILES :=
 # automatic
 ^F = $(notdir $^)
 # makefile (from 'Makefile', line 16)
-PROJECT_SRC = push_swap.c parsing.c check_duplicates.c init_stack.c swap_operations.c push_operations.c rotate_operations.c reverse_rotate_operations.c small_sorting.c big_sorting.c moves.c
+PROJECT_SRC = push_swap.c parsing.c check_duplicates.c init_stack.c swap_operations.c push_operations.c rotate_operations.c reverse_rotate_operations.c small_sorting.c big_sorting.c moves.c lst_functions.c
 # environment
-INVOCATION_ID = 0d47722c87934f3b8c9b1a6ab4e1939e
+INVOCATION_ID = 1868ba7192d749b9bd8e7f0bcbd929a6
 # environment
 DOCKER_HOST = unix:///run/user/102085/docker.sock
 # automatic
@@ -177,7 +174,7 @@ GIO_LAUNCHED_DESKTOP_FILE = /usr/share/applications/code.desktop
 # makefile
 .DEFAULT_GOAL := all
 # environment
-SYSTEMD_EXEC_PID = 433501
+SYSTEMD_EXEC_PID = 470606
 # environment
 DISPLAY = :0
 # environment
@@ -187,13 +184,13 @@ GTK_MODULES = gail:atk-bridge
 # default
 MAKE_VERSION := 4.3
 # environment
-MANAGERPID = 432916
+MANAGERPID = 469976
 # environment
 DBUS_STARTER_BUS_TYPE = session
 # environment
 DEBUGINFOD_URLS = https://debuginfod.ubuntu.com 
 # environment
-GIO_LAUNCHED_DESKTOP_FILE_PID = 443802
+GIO_LAUNCHED_DESKTOP_FILE_PID = 471526
 # environment
 PAGER = less
 # environment
@@ -205,13 +202,12 @@ CFLAGS = -Wall -Werror -Wextra -g
 # environment
 GPG_AGENT_INFO = /run/user/102085/gnupg/S.gpg-agent:0:1
 # environment
-JOURNAL_STREAM = 8:965064
+JOURNAL_STREAM = 8:1842459
 # environment
 XDG_SESSION_CLASS = user
 # environment
 HOME = /home/dkot
 # environment
- 
 QT_IM_MODULE = ibus
 # environment
 ELECTRON_RUN_AS_NODE = 1
@@ -242,7 +238,7 @@ VSCODE_ESM_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
 # environment
 GDMSESSION = ubuntu
 # variable set hash-table stats:
-# Load=114/1024=11%, Rehash=0, Collisions=11/161=7%
+# Load=113/1024=11%, Rehash=0, Collisions=10/164=6%
 
 # Pattern-specific Variable Values
 
@@ -250,11 +246,10 @@ GDMSESSION = ubuntu
 
 # Directories
 
-# src (device 2048, inode 25301583): 14 files, no impossibilities so far.
-# . (device 2048, inode 17546426): 10 files, no impossibilities.
+# src (device 2048, inode 25301583): 11 files, no impossibilities so far.
+# . (device 2048, inode 17546426): 9 files, no impossibilities.
 
-# 24 files, no impossibilities in 2 directories.
- 
+# 20 files, no impossibilities in 2 directories.
 
 # Implicit Rules
 
@@ -266,74 +261,41 @@ obj/%.o: src/%.c | obj
 # Files
 
 # Not a target:
-src/init_stack.c:
-#  Implicit rule search has been done.
-#  Last modified 2025-03-11 15:43:47.00269802
-#  File has been updated.
-#  Successfully updated.
-
-obj/big_sorting.o: src/big_sorting.c | obj
-#  Implicit rule search has been done.
-#  Implicit/static pattern stem: 'big_sorting'
-#  Last modified 2025-03-12 20:02:26.272076004
-#  File has been updated.
-#  Successfully updated.
-#  recipe to execute (from 'Makefile', line 34):
-	$(CC) $(CFLAGS) -I$(LIBFTDIR) -I$(FTPRINTF_DIR) -c $< -o $@
+obj/big_sorting.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
 
 # Not a target:
-src/rotate_operations.c:
-#  Implicit rule search has been done.
- 
-#  Last modified 2025-03-11 17:15:48.404095542
-#  File has been updated.
-#  Successfully updated.
-
-obj/swap_operations.o: src/swap_operations.c | obj
-#  Implicit rule search has been done.
-#  Implicit/static pattern stem: 'swap_operations'
-#  Last modified 2025-03-12 20:02:26.169074757
-#  File has been updated.
-#  Successfully updated.
-#  recipe to execute (from 'Makefile', line 34):
-	$(CC) $(CFLAGS) -I$(LIBFTDIR) -I$(FTPRINTF_DIR) -c $< -o $@
+obj/swap_operations.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
 
 # Not a target:
-src/reverse_rotate_operations.c:
-#  Implicit rule search has been done.
-#  Last modified 2025-03-11 17:17:12.564854527
-#  File has been updated.
-#  Successfully updated.
+obj/moves.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
 
-obj/moves.o: src/moves.c | obj
-#  Implicit rule search has been done.
-#  Implicit/static pattern stem: 'moves'
-#  Last modified 2025-03-12 20:02:26.29407627
-#  File has been updated.
-#  Successfully updated.
- 
-#  recipe to execute (from 'Makefile', line 34):
-	$(CC) $(CFLAGS) -I$(LIBFTDIR) -I$(FTPRINTF_DIR) -c $< -o $@
+# Not a target:
+obj/lst_functions.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
 
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2025-03-12 20:02:23.710044978
+ 
+#  Last modified 2025-03-12 21:39:45.563247571
 #  File has been updated.
 #  Successfully updated.
 
 # Not a target:
 src/push_swap.c:
 #  Implicit rule search has been done.
-#  Last modified 2025-03-12 19:44:18.664379815
-#  File has been updated.
-#  Successfully updated.
-
-# Not a target:
-src/parsing.c:
-#  Implicit rule search has been done.
- 
-#  Last modified 2025-03-10 12:51:43.371247781
+#  Last modified 2025-03-12 20:30:02.598605172
 #  File has been updated.
 #  Successfully updated.
 
@@ -355,48 +317,55 @@ re: fclean all
 
 obj:
 #  Implicit rule search has not been done.
-#  Last modified 2025-03-12 20:02:26.29407627
- 
+#  Implicit/static pattern stem: ''
+#  File does not exist.
 #  File has been updated.
-#  Successfully updated.
+#  Needs to be updated (-q is set).
+# automatic
+# @ := obj
+# automatic
+# * := 
+# automatic
+# < := 
+# automatic
+# + := 
+# automatic
+# % := 
+# automatic
+# ^ := 
+# automatic
+# ? := 
+# automatic
+# | := 
+# variable set hash-table stats:
+# Load=8/32=25%, Rehash=0, Collisions=1/12=8%
 #  recipe to execute (from 'Makefile', line 38):
 	mkdir -p $(OBJDIR)
 
-obj/init_stack.o: src/init_stack.c | obj
-#  Implicit rule search has been done.
-#  Implicit/static pattern stem: 'init_stack'
-#  Last modified 2025-03-12 20:02:26.149074515
-#  File has been updated.
-#  Successfully updated.
-#  recipe to execute (from 'Makefile', line 34):
-	$(CC) $(CFLAGS) -I$(LIBFTDIR) -I$(FTPRINTF_DIR) -c $< -o $@
+# Not a target:
+obj/init_stack.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
 
 libs/libft/libft.a:
 #  Implicit rule search has not been done.
-#  Last modified 2025-03-12 20:02:27.150086635
-#  File has been updated.
-#  Successfully updated.
+#  Modification time never checked.
+#  File has not been updated.
 #  recipe to execute (from 'Makefile', line 42):
 	$(MAKE) -C $(LIBFTDIR)
 
-obj/check_duplicates.o: src/check_duplicates.c | obj
-#  Implicit rule search has been done.
- 
-#  Implicit/static pattern stem: 'check_duplicates'
-#  Last modified 2025-03-12 20:02:26.128074261
-#  File has been updated.
-#  Successfully updated.
-#  recipe to execute (from 'Makefile', line 34):
-	$(CC) $(CFLAGS) -I$(LIBFTDIR) -I$(FTPRINTF_DIR) -c $< -o $@
+# Not a target:
+obj/check_duplicates.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
 
-obj/push_operations.o: src/push_operations.c | obj
-#  Implicit rule search has been done.
-#  Implicit/static pattern stem: 'push_operations'
-#  Last modified 2025-03-12 20:02:26.189074999
-#  File has been updated.
-#  Successfully updated.
-#  recipe to execute (from 'Makefile', line 34):
-	$(CC) $(CFLAGS) -I$(LIBFTDIR) -I$(FTPRINTF_DIR) -c $< -o $@
+# Not a target:
+obj/push_operations.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
 
 # Not a target:
 .DEFAULT:
@@ -408,10 +377,11 @@ all: push_swap
 #  Phony target (prerequisite of .PHONY).
 #  Command line target.
 #  Implicit rule search has not been done.
- 
 #  File does not exist.
 #  File has been updated.
-#  Successfully updated.
+#  Needs to be updated (-q is set).
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/4=0%
 
 fclean: clean
 #  Phony target (prerequisite of .PHONY).
@@ -423,135 +393,83 @@ fclean: clean
 	$(MAKE) -C $(LIBFTDIR) fclean
 	$(MAKE) -C $(FTPRINTF_DIR) fclean
 
-# Not a target:
-src/push_operations.c:
-#  Implicit rule search has been done.
-#  Last modified 2025-03-11 15:35:20.566020566
-#  File has been updated.
-#  Successfully updated.
-
 obj/push_swap.o: src/push_swap.c | obj
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'push_swap'
-#  Last modified 2025-03-12 20:02:26.088073776
+#  File does not exist.
 #  File has been updated.
-#  Successfully updated.
+#  Needs to be updated (-q is set).
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/4=0%
 #  recipe to execute (from 'Makefile', line 34):
- 
 	$(CC) $(CFLAGS) -I$(LIBFTDIR) -I$(FTPRINTF_DIR) -c $< -o $@
 
-push_swap: obj/push_swap.o obj/parsing.o obj/check_duplicates.o obj/init_stack.o obj/swap_operations.o obj/push_operations.o obj/rotate_operations.o obj/reverse_rotate_operations.o obj/small_sorting.o obj/big_sorting.o obj/moves.o libs/libft/libft.a libs/libftprintf/libftprintf.a
+push_swap: obj/push_swap.o obj/parsing.o obj/check_duplicates.o obj/init_stack.o obj/swap_operations.o obj/push_operations.o obj/rotate_operations.o obj/reverse_rotate_operations.o obj/small_sorting.o obj/big_sorting.o obj/moves.o obj/lst_functions.o libs/libft/libft.a libs/libftprintf/libftprintf.a
 #  Implicit rule search has not been done.
-#  Last modified 2025-03-12 20:02:27.267088051
+#  File does not exist.
 #  File has been updated.
-#  Successfully updated.
+#  Needs to be updated (-q is set).
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/4=0%
 #  recipe to execute (from 'Makefile', line 29):
 	$(CC) $(CFLAGS) $(PROJECT_OBJ) -L$(LIBFTDIR) -lft -L$(FTPRINTF_DIR) -lftprintf -o $(PROJECT_NAME)
 
 # Not a target:
-src/small_sorting.c:
-#  Implicit rule search has been done.
-#  Last modified 2025-03-11 17:09:25.561739202
- 
-#  File has been updated.
-#  Successfully updated.
+obj/parsing.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
 
 # Not a target:
-src/big_sorting.c:
-#  Implicit rule search has been done.
-#  Last modified 2025-03-12 20:01:06.401105953
-#  File has been updated.
-#  Successfully updated.
-
-obj/parsing.o: src/parsing.c | obj
-#  Implicit rule search has been done.
-#  Implicit/static pattern stem: 'parsing'
-#  Last modified 2025-03-12 20:02:26.108074018
-#  File has been updated.
-#  Successfully updated.
-#  recipe to execute (from 'Makefile', line 34):
-	$(CC) $(CFLAGS) -I$(LIBFTDIR) -I$(FTPRINTF_DIR) -c $< -o $@
-
-obj/small_sorting.o: src/small_sorting.c | obj
-#  Implicit rule search has been done.
- 
-#  Implicit/static pattern stem: 'small_sorting'
-#  Last modified 2025-03-12 20:02:26.250075738
-#  File has been updated.
-#  Successfully updated.
-#  recipe to execute (from 'Makefile', line 34):
-	$(CC) $(CFLAGS) -I$(LIBFTDIR) -I$(FTPRINTF_DIR) -c $< -o $@
-
-# Not a target:
-src/moves.c:
-#  Implicit rule search has been done.
-#  Last modified 2025-03-12 20:01:54.159686715
-#  File has been updated.
-#  Successfully updated.
-
-# Not a target:
-src/check_duplicates.c:
-#  Implicit rule search has been done.
- 
-#  Last modified 2025-03-11 15:35:11.288842587
-#  File has been updated.
-#  Successfully updated.
+obj/small_sorting.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
 
 libs/libftprintf/libftprintf.a:
 #  Implicit rule search has not been done.
-#  Last modified 2025-03-12 20:02:27.242087748
-#  File has been updated.
-#  Successfully updated.
+#  Modification time never checked.
+#  File has not been updated.
 #  recipe to execute (from 'Makefile', line 45):
- 
 	$(MAKE) -C $(FTPRINTF_DIR)
 
 # Not a target:
- 
-src/swap_operations.c:
-#  Implicit rule search has been done.
-#  Last modified 2025-03-11 13:44:28.128566767
-#  File has been updated.
-#  Successfully updated.
+.SUFFIXES:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
 
 .PHONY: all clean fclean re
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
 
-obj/rotate_operations.o: src/rotate_operations.c | obj
-#  Implicit rule search has been done.
-#  Implicit/static pattern stem: 'rotate_operations'
-#  Last modified 2025-03-12 20:02:26.208075229
-#  File has been updated.
-#  Successfully updated.
-#  recipe to execute (from 'Makefile', line 34):
-	$(CC) $(CFLAGS) -I$(LIBFTDIR) -I$(FTPRINTF_DIR) -c $< -o $@
+# Not a target:
+obj/rotate_operations.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
 
-obj/reverse_rotate_operations.o: src/reverse_rotate_operations.c | obj
-#  Implicit rule search has been done.
-#  Implicit/static pattern stem: 'reverse_rotate_operations'
- 
-#  Last modified 2025-03-12 20:02:26.229075483
-#  File has been updated.
-#  Successfully updated.
-#  recipe to execute (from 'Makefile', line 34):
-	$(CC) $(CFLAGS) -I$(LIBFTDIR) -I$(FTPRINTF_DIR) -c $< -o $@
+# Not a target:
+obj/reverse_rotate_operations.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
 
 # files hash-table stats:
-# Load=34/1024=3%, Rehash=0, Collisions=0/124=0%
+# Load=25/1024=2%, Rehash=0, Collisions=0/67=0%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 67 / storage = 980 B / avg = 14 B
-# current buf: size = 8162 B / used = 980 B / count = 67 / avg = 14 B
+# strcache buffers: 1 (0) / strings = 46 / storage = 639 B / avg = 13 B
+# current buf: size = 8162 B / used = 639 B / count = 46 / avg = 13 B
 
-# strcache performance: lookups = 131 / hit rate = 48%
+# strcache performance: lookups = 79 / hit rate = 41%
 # hash-table stats:
-# Load=67/8192=1%, Rehash=0, Collisions=0/131=0%
-# Finished Make data base on Wed Mar 12 20:02:47 2025
+# Load=46/8192=1%, Rehash=0, Collisions=0/79=0%
+# Finished Make data base on Wed Mar 12 21:39:49 2025
 
  

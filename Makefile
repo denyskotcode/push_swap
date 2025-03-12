@@ -13,7 +13,7 @@ LIBFTDIR = libs/libft
 FTPRINTF_DIR = libs/libftprintf
 
 # Source Files
-PROJECT_SRC = push_swap.c parsing.c check_duplicates.c init_stack.c swap_operations.c push_operations.c rotate_operations.c reverse_rotate_operations.c small_sorting.c big_sorting.c moves.c
+PROJECT_SRC = push_swap.c parsing.c check_duplicates.c init_stack.c swap_operations.c push_operations.c rotate_operations.c reverse_rotate_operations.c small_sorting.c big_sorting.c moves.c lst_functions.c
 
 # Object Files
 PROJECT_OBJ = $(PROJECT_SRC:%.c=$(OBJDIR)/%.o)

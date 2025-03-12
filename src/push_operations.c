@@ -6,32 +6,32 @@
 /*   By: dkot <dkot@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/11 13:54:20 by dkot              #+#    #+#             */
-/*   Updated: 2025/03/11 15:35:20 by dkot             ###   ########.fr       */
+/*   Updated: 2025/03/12 20:31:05 by dkot             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-void px(t_list **a, t_list **b)
+void	px(t_list **a, t_list **b)
 {
-    t_list *temp;
+	t_list	*temp;
 
-    if (!*b)
-        return;
-    temp = *b;
-    *b = (*b)->next;
-    temp->next = *a;
-    *a = temp;
+	if (!*b)
+		return ;
+	temp = *b;
+	*b = (*b)->next;
+	temp->next = *a;
+	*a = temp;
 }
 
-void pa(t_list **a, t_list **b)
+void	pa(t_list **a, t_list **b)
 {
-	px(a,b);
+	px(a, b);
 	ft_printf("pa\n");
 }
 
-void pb(t_list **a, t_list **b)
+void	pb(t_list **a, t_list **b)
 {
-	px(b,a);
+	px(b, a);
 	ft_printf("pb\n");
 }

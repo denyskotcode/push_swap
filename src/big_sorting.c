@@ -6,50 +6,52 @@
 /*   By: dkot <dkot@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/11 17:25:17 by dkot              #+#    #+#             */
-/*   Updated: 2025/03/12 20:05:12 by dkot             ###   ########.fr       */
+/*   Updated: 2025/03/12 21:35:24 by dkot             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-int is_sorted(t_list *stack)
+int	is_sorted(t_list	*stack)
 {
-	while (stack && stack->next) {
+	while (stack && stack->next)
+	{
 		if (*(int *)stack->content > *(int *)stack->next->content)
-			return 0;
+			return (0);
 		stack = stack->next;
 	}
-	return 1;
+	return (1);
 }
 
-int get_avg(t_list *stack)
+int	get_avg(t_list *stack)
 {
-	int	size;
+	int		size;
+	int		sum;
+	t_list	*current;
 
 	size = ft_lstsize(stack);
 	if (!stack || size == 0)
-		return 0;
-	int sum = 0;
-	t_list *current = stack;
-	while (current) {
+		return (0);
+	sum = 0;
+	current = stack;
+	while (current)
+	{
 		sum += *(int *)current->content;
 		current = current->next;
 	}
 	return (sum / size);
 }
 
-void sort_big(t_list **a, t_list **b)
+void	sort_big(t_list **a, t_list **b)
 {
-	move_from_a_to_b(a,b);
+	move_from_a_to_b(a, b);
 	if (ft_lstsize(*a) == 3)
 		sort_three(a);
 	else if (ft_lstsize(*a) == 2)
 		sort_two(a);
 	move_from_b_to_a(a, b);
 	move_to_top(a);
-
 }
-
 
 void	move_from_a_to_b(t_list	**a, t_list	**b)
 {

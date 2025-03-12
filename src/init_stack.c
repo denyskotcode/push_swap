@@ -6,7 +6,7 @@
 /*   By: dkot <dkot@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/10 13:35:03 by dkot              #+#    #+#             */
-/*   Updated: 2025/03/11 15:43:47 by dkot             ###   ########.fr       */
+/*   Updated: 2025/03/12 20:32:09 by dkot             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,17 +53,17 @@ int process_argument(char *arg, t_list **stack_a)
 
 t_list *init_stack_a(int argc, char **argv)
 {
-    t_list *stack_a = NULL;
+	t_list *stack_a = NULL;
     int i = 1;
 
-    while (i < argc)
-    {
-        if (process_argument(argv[i], &stack_a) == -1)
-        {
-            ft_lstclear(&stack_a, free);
-            return (NULL);
-        }
-        i++;
-    }
-    return (stack_a);
+	while (i < argc)
+	{
+		if (process_argument(argv[i], &stack_a) == -1)
+		{
+			ft_lstclear(&stack_a, free);
+			return (NULL);
+	}
+		i++;
+	}
+	return (stack_a);
 }

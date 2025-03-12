@@ -6,7 +6,7 @@
 /*   By: dkot <dkot@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/12 19:36:04 by dkot              #+#    #+#             */
-/*   Updated: 2025/03/12 20:01:54 by dkot             ###   ########.fr       */
+/*   Updated: 2025/03/12 21:39:30 by dkot             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -166,33 +166,6 @@ int	get_min(int a, int b, int c, int d)
 	return (min);
 }
 
-int	ft_lstmin(t_list *stack)
-{
-	int	min;
-
-	min = *(int *)stack->content;
-	while (stack)
-	{
-		if (*(int *)stack->content < min)
-			min = *(int *)stack->content;
-		stack = stack->next;
-	}
-	return (min);
-}
-
-int	ft_lstmax(t_list *stack)
-{
-	int	max;
-
-	max = *(int *)stack->content;
-	while (stack)
-	{
-		if (*(int *)stack->content > max)
-			max = *(int *)stack->content;
-		stack = stack->next;
-	}
-	return (max);
-}
 
 t_move_cost	*get_cheapest(t_list *stack_a, t_list *stack_b, int size)
 {
