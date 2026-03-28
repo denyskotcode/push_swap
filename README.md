@@ -38,3 +38,10 @@ The sorting is strictly limited to these operations:
 ```bash
 git clone [https://github.com/YOUR_USERNAME/push_swap.git](https://github.com/YOUR_USERNAME/push_swap.git)
 cd push_swap
+
+
+---
+
+## License
+
+MIT © [denyskotcode](https://github.com/denyskotcode) — see [LICENSE](LICENSE) for details.
